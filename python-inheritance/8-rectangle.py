@@ -1,13 +1,17 @@
 #!/usr/bin/python3
-""" module subclass rectangle
-"""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('8-rectangle').Rectangle
 
+r = Rectangle(3, 5)
 
-class Rectangle(BaseGeometry):
-    """Rectangle that inherits from BaseGeometry"""
-    def __init__(self, width, height):
-        BaseGeometry.integer_validator(self, 'height', height)
-        self.__height = height
-        BaseGeometry.integer_validator(self, 'width', width)
-        self.__width = width
+print(r)
+print(dir(r))
+
+try:
+    print("Rectangle: {} - {}".format(r.width, r.height))
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+try:
+    r2 = Rectangle(4, True)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
