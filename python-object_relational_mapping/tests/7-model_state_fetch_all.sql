@@ -1,2 +1,2 @@
 -- Insert states
-INSERT INTO states (name) VALUES ("California"), ("New Mexico"), ("Texas"), ("New York");
+INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York");
