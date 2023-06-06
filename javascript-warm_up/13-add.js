@@ -1,4 +1,4 @@
 #!/usr/bin/node
-function add(10, 5) {
-	return (10 + 5);
+exports.add = function (num1, num2) {
+  return (num1 + num2);
 };
