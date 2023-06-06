@@ -5,15 +5,15 @@ const mySquare = parseInt(arg);
 if (!isNaN(mySquare)) {
   if (mySquare > 0) {
     for (let i = 0; i < mySquare; i++) {
-      let row = "";
+      let row = '';
       for (let j = 0; j < mySquare; j++) {
-        row += "X";
+        row += 'X';
       }
       console.log(row);
     }
   } else {
-    console.log("Size must be greater than 0");
+    console.log('Size must be greater than 0');
   }
 } else {
-  console.log("Missing size");
+  console.log('Missing size');
 }
