@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const args = process.argv;
-let reqURL = args[2];
+const reqURL = args[2];
 let request = require('request');
 request(reqURL, function (error, response, body) {
   if (error) {
